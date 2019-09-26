@@ -1,0 +1,391 @@
+/**
+ *
+ * STYLE: GARAGE GLOBAL
+ *
+ */
+
+// HEADER GRAVITY FORM
+
+.form-box {
+	padding: 1rem 3rem;
+	margin: 1rem;
+	margin-top: 2rem;
+	margin-bottom: 1.8rem;
+	background-color: $cg-secondary;
+	// border: 1rem solid white;
+
+	@media (max-width: 991px) {
+		padding: 1rem 2rem;
+		margin: 0;
+	}
+
+	#gform_wrapper_9 {
+		color: white;
+
+		.gform_title {
+			color: white;
+			font-size: 2rem;
+		}
+		// THE CHECKBOXES
+		#input_9_5 {
+			label {
+				max-width: 100%;
+				padding-top: .5rem;
+				padding-left: .5rem;
+
+				@media (max-width: 1199px) {
+					font-size: .7rem;
+				}
+				@media (max-width: 768px) {
+					font-size: 1rem;
+				}
+			}
+
+			input {
+				margin-left: 1rem;
+			}
+
+			li {
+				float: left !important;
+
+				@media (max-width: 768px) {
+					float: none !important;
+				}
+			}
+		}
+		#gform_submit_button_9 {
+			clear: both;
+			margin: auto;
+			display: block;
+		}
+	}
+}
+
+// FOOTER CTA FOR BLOG INDEX & GALLERY PAGE
+
+#footer-garage-cta {
+
+	padding: 3rem;
+	background-color: $cg-primary;
+
+	.text-content {
+		color: whitesmoke;
+		font-weight: 300;
+
+		strong {
+			font-weight: 600;
+		}
+
+		a {
+			color: $cg-button;
+			font-weight: 600;
+		}
+
+		@media (min-width: 1000px ) {
+			width: 60%;
+		}
+	}
+}
+
+
+/* ---------- APP GALLERY STYLE START ---------- */
+
+#MG-app-gallery {
+
+	.apebtn {
+
+		font-family: $primary-font;
+		font-weight: 700;
+
+		&.active {
+			background-color: #8B0000;
+			color: #ffffff;
+		}
+	}
+
+	@media(min-width: 767px) {
+
+		.wpape_gallery_button {
+
+			display: flex;
+			justify-content: center;
+			margin-bottom: 30px;
+
+			.apebtn {
+
+				background-color: transparent !important;
+				font-family: $primary-font;
+				font-weight: 700;
+				text-transform: uppercase;;
+				color: #000000;
+				box-shadow: none;
+				border-bottom: 5px solid #E5E3E3;
+				margin-right: 0px !important;
+				padding-bottom: 7px;
+				line-height: 10px;
+
+				&.active {
+
+					color: #8B0000 !important;
+					border-bottom-color: #8B0000;
+				}
+			}
+		}
+	}
+}
+
+/* ---------- APP GALLERY STYLE END ---------- */
+
+
+
+/* ---------- CONTACT FORM STYLE START ---------- */
+
+#MG-contact-form {
+
+	.gform_body {
+
+		.gform_fields {
+
+			.gfield {
+
+				.ginput_container {
+
+					input {
+
+						background: transparent;
+						min-height: 50px;
+						border: 1px solid #C3C0C0;
+						border-radius: 5px;
+						padding-left: 15px;
+						padding-right: 15px;
+
+						&::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+						  color: #A5A3A3 !important;
+						  opacity: 1; /* Firefox */
+						}
+
+						&:-ms-input-placeholder { /* Internet Explorer 10-11 */
+						  color: #A5A3A3;
+						}
+
+						&::-ms-input-placeholder { /* Microsoft Edge */
+						  color: #A5A3A3;
+						}
+					}
+
+					select {
+
+						background: transparent;
+						min-height: 50px;
+						border: 1px solid #C3C0C0;
+						border-radius: 5px;
+						padding-left: 15px;
+						padding-right: 15px;
+						margin-top: 12px;
+
+						// &:required {
+						//
+						// 	&:invalid {
+						// 	  color: #A5A3A3 !important;
+						// 	}
+						// }
+
+						option[value=""][disabled] {
+						  display: none;
+						}
+
+						&::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+						  color: #A5A3A3 !important;
+						  opacity: 1; /* Firefox */
+						}
+
+						&:-ms-input-placeholder { /* Internet Explorer 10-11 */
+						  color: #A5A3A3;
+						}
+
+						&::-ms-input-placeholder { /* Microsoft Edge */
+						  color: #A5A3A3;
+						}
+					}
+
+					textarea {
+
+						background: transparent;
+						min-height: 50px;
+						border: 1px solid #C3C0C0;
+						border-radius: 5px;
+						padding: 15px;
+
+						&::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+						  color: #A5A3A3 !important;
+						  opacity: 1; /* Firefox */
+						}
+
+						&:-ms-input-placeholder { /* Internet Explorer 10-11 */
+						  color: #A5A3A3;
+						}
+
+						&::-ms-input-placeholder { /* Microsoft Edge */
+						  color: #A5A3A3;
+						}
+					}
+
+					&.ginput_container_checkbox {
+
+						.gfield_checkbox {
+
+							margin: 0px;
+
+							li {
+
+								float: left;
+								width: 50%;
+
+								&:last-child {
+
+									margin-bottom: 30px;
+								}
+
+								@media(max-width: 767px) {
+
+									width: 100%;
+									margin-bottom: 0px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* ---------- CONTACT FORM STYLE END ---------- */
+
+
+
+/*---------- FLOTTER GET A QUOTE STYLE START ---------- */
+
+#MG-flotted-get-a-quote {
+
+	position: fixed;
+	right: 20px;
+	bottom: 18%;
+	z-index: 99;
+
+	button {
+
+		background: transparent !important;
+		border: 0px;
+		padding: 0px;
+		outline: 0;
+		cursor: pointer;
+	}
+
+	@media (max-width: 1920px ) {
+
+		bottom: 51%;
+	}
+
+	@media (max-width: 1366px ) {
+
+		bottom: 29%;
+	}
+
+	@media (max-width: 1024px ) {
+
+		bottom: 55%;
+		right: 2%;
+	}
+
+	@media (max-width: 768px ) {
+
+		bottom: 44%;
+		right: 2%;
+	}
+
+	@media (max-width: 360px ) {
+
+		bottom: 58%;
+		right: 15%;
+	}
+
+	@media (max-width: 414px ) {
+
+		bottom: 8%;
+		right: 20%;
+	}
+
+	@media (max-width: 411px ) {
+
+		bottom: 31%;
+		right: 18%;
+	}
+
+	@media (max-width: 375px ) {
+
+		bottom: 11%;
+		right: 18%;
+	}
+}
+
+/*---------- FLOTTER GET A QUOTE STYLE END ---------- */
+
+
+
+/* --------- REQUEST QUOTE MODAL STYLE START ---------- */
+
+#modalGetQuote {
+
+	// margin-top: 30px;
+	background: rgba(255,255,255, 0.85);
+	z-index: 999999;
+
+	.modal-header {
+
+		padding: 0px !important;
+		border: 0px;
+
+		.close {
+
+			position: absolute;
+			background: $primary;
+			color: #ffffff;
+			z-index: 999;
+			opacity: 1;
+			right: 0px;
+			width: 32px;
+			height: 32px;
+			padding: 0px;
+			border-radius: 50px;
+		}
+	}
+
+	.modal-body {
+
+		padding: 0px;
+
+		.form-box {
+
+			margin: 0px;
+		}
+	}
+
+	&.show {
+
+		display: flex !important;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+/* --------- REQUEST QUOTE MODAL STYLE END ---------- */
+
+
+.page-id-6361, .page-id-6418 {
+
+	#MG-flotted-get-a-quote {
+
+		display: none !important;
+	}
+}
